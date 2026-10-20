@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Henok Mulugeta" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The website for The Little Taco Shop" />
+    <title>Little Tacos Shop</title>
+    <link rel="icon" href="html5.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header_h1">
+        <map name="Tacos">Little Taco Shop</map>
+      </h1>
+      <nav class="header_nav">
+        <ul class="header_ul">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="Hours.html">Hours</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2 class="hero_h2">Welcome!</h2>
+      <figure>
+        <img
+          src="img/food1.png"
+          alt="tacos and a drink"
+          title="We Love Tacos!"
+          width="1000"
+          height="667"
+        />
+        <figcaption class="offscreen">Tacos and a Drink</figcaption>
+      </figure>
+    </section>
+
+    <main class="main">
+      <article class="main_article menu">
+        <h2 class="menu_h2">Our Menu</h2>
+        <table class="menu_container">
+          <caption class="offscreen">
+            Our Tacos
+          </caption>
+
+          <thead>
+            <tr>
+              <th class="menu_header" scope="col">Tacos</th>
+              <th class="menu_header" id="qty" scope="col">
+                <abbr title="Quantity">QTY</abbr>
+              </th>
+              <th class="menu_header" id="price" scope="col">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="menu_item menu_cr" scope="row" rowspan="3">Crunchy</th>
+              <td class="menu_item">1</td>
+              <td class="menu_item">$1.50</td>
+            </tr>
+            <tr>
+              <td class="menu_item">2</td>
+              <td class="menu_item">$2.50</td>
+            </tr>
+            <tr>
+              <td class="menu_item">3</td>
+              <td class="menu_item">$3.25</td>
+            </tr>
+            <tr>
+              <th class="menu_item menu_sf" scope="row" rowspan="3">Soft</th>
+              <td class="menu_item">1</td>
+              <td class="menu_item">$2.00</td>
+            </tr>
+            <tr>
+              <td class="menu_item">2</td>
+              <td class="menu_item">$3.50</td>
+            </tr>
+            <tr>
+              <td class="menu_item">3</td>
+              <td class="menu_item">$4.50</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td class="menu_item menu_cs" colspan="3">
+                Chips &amp; Salsa $2.00
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </article>
+      <p class="center">
+        <a href="#">Back To Top</a>
+      </p>
+    </main>
+
+    <hr />
+
+    <footer class="footer">
+      <p>
+        <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+        <span class="nowrap">Little Taco Shop</span>
+      </p>
+    </footer>
+  </body>
+</html>
